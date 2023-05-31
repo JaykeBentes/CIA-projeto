@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100%;
+    background-color: #fafffb;
+    margin-bottom: 70px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(33,79,60);
+background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%, rgba(250,255,251,1) 100%);
+    height: 130px;
+}
+#hamburguer {
+    display: none;
+}
+.cabecalho img {
+    max-width: 350px;
+    margin-top: 15px;
+}
+.navegacao {
+    display: flex;
+    list-style: none;
+}
+.navegacao li {
+    margin: 0 15px;
+}
+.navegacao li a {
+    text-decoration: none;
+    color: #3a3a3c;
+    font-size: 1.4em;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 0 #2d6b51;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+.navegacao li a:hover {
+    color: #ffff;
+    box-shadow: inset 200px 0 0 0 #2d6b51;
+}
+.rodape {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background: #163d2d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.rodape h3 {
+    color:  #edffef;
+    font-size: 1em;
+}
+.rodape p {
+    font-size: 0.8em;
+    color: #edffef;
+    margin-top: 10px;
+}
+.rodape img {
+    max-height: 50px;
+    padding: 5px 10px;
+}
+
+
+/*página inicial*/
+#meuSlider {
+    width: 80%;
+    margin: 1em auto;
+}
+.carousel-inner img {
+    min-height: 500px;
+}
+
+.about {
+    width: 600px;
+    margin: 120px auto;
+}
+.about h3 {
+    color: #2d6b51;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 50px 10%;
+}
+.about p {
+    color: #2d6b51;
+    font-size: 2em;
+    text-align: justify;
+}
+.agendar {
+    margin: 50px 23%;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #2d6b51;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.agendar:hover {
+    background-color: #edffef;
+}
+.agendar a {
+    text-decoration: none;
+    color: #edffef;
+}
+.agendar a:hover {
+    color: #2d6b51;
+}
+
+.apresentacao {
+    margin: 100px 0;
+    color: #2d6b51;
+    display: flex;
+    justify-content: space-around;    
+}
+#missao-visao {
+    width: 400px;
+}
+#missao-visao h3 {
+    width: 50%;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+#missao-visao p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 15px 0 40px 0;
+}
+#descricao {
+    width: 400px;
+    margin-top: 100px;
+}
+#descricao h3 {
+    width: 80%;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+#descricao p {
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 25px 0 40px 0;
+    text-transform: lowercase;
+}
+
+.biografia {
+    width: 850px;
+    margin: 100px auto;
+    color: #2d6b51;
+}
+.biografia h2 {
+    width: 60%;
+    margin: 200px 0 50px 0;
+    padding: 5px 0;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.biografia p {
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 25px 0 40px 0;
+}
+.perfil {
+    display: flex;
+}
+.perfil img {
+    margin: 10px;
+    border-radius: 0 30% 0 0;
+}
+.perfil p {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: justify;
+    margin: 30px 0 0 20px;
+}
+.link-dr {
+    display: flex;
+    text-decoration: none;
+}
+.link-dr p {
+    color: #2d6b51;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px;
+}
+.link-dr p:hover {
+    color: #4fb98d;
+}
+.agendamento {
+    text-align: center;
+    position: relative;
+    bottom: -30%;
+    left: 25%;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #b5e4d0b4;
+}
+.agendamento a {
+    text-decoration: none;
+    color: #2d6b51;
+}
+.agendamento a:hover {
+    color: #4fb98d;
+    text-decoration: underline;
+}
+
+
+/*Exames*/
+.exames {
+    color: #2d6b51;
+    margin: 50px auto;
+}
+.exames h3 {
+    margin: 70px auto;
+    width: 50%;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+#exames-realizados {
+
+    margin: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#exames-realizados li {
+    color: #2d6b51;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.marcacao {
+    margin: 30px 25%;
+    width: 50%;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+}
+.marcacao a {
+    text-decoration: none;
+    color: #2d6b51;
+}
+.marcacao:hover, .marcacao a:hover {
+    background-color: #b5e4d0;
+    text-decoration: underline;
+}
+
+
+/*Convenios*/
+.convenios {
+    margin: 30px auto;
+}
+.convenios img {
+    width: 100%;
+}
+#convenios_atendidos {
+    list-style: circle;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nome-convenio {
+    flex-basis: 40%;
+    font-size: 2.1em;
+    font-weight: 600;
+    color: #166444;
+}
+
+
+/*Localização*/
+.local {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    margin:50px 20px;
+    color: #2d6b51;
+}
+.local h2 {
+    width: 70%;
+    margin: 5%;
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.local h4 {
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/*Contatos*/
+.contatos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+    color: #2d6b51;
+}
+.logo_tel img {
+    max-width: 400px;
+}
+.contatos h2 {
+    background-color: #b5e4d0b4;
+    border-radius: 5%;
+    font-size: 2.3em;
+    font-weight: 700;
+    text-align: center;
+}
+.icons_contato {
+    list-style: none;
+    margin: 30px 0;
+}
+.icons_contato img {
+    max-height: 60px;
+}
+.icons_contato li {
+    display: flex;
+    margin: 25px 10px;
+}
+.icons_contato p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 15px;
+}
+
+
+
+@media screen and (max-width: 1015px) {
+    .navegacao {
+        display: none;
+    }
+    #hamburguer {
+        display: block;
+        z-index: 1000;
+        position: relative;
+        right: 5%;
+        top: -10%;
+    }
+    .btn {
+        display: flex;
+    }
+    .btn img {
+        max-width: 60px;
+    }
+    .btn h1 {
+        color: #ffffff;
+        font-size: 2.5em;
+        font-weight: 700;
+        margin: 15px 10px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+    }
+    
+    #offcanvasRight {
+        background-color: #b5e4d0;
+        padding: 50px 5px;
+    }
+    #offcanvasRight ul {
+        font-size: 2em;
+        border-radius: 5%;
+        list-style: none;
+        font-weight: 600;
+    }
+    #offcanvasRight li {
+        margin: 25px 0;
+    }
+    #offcanvasRight li a {
+        text-decoration: none;
+        color: #2d6b51;
+        font-weight: 600;
+    }
+    #offcanvasRight a:hover {
+        padding: 15px;
+        color: #edffef;
+        background-color: #2d6b51;
+        text-decoration: underline;
+        border-radius: 8%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .cabecalho img {
+        max-height: 250px;
+        margin-top: 8px;
+    }
+    #meuSlider {
+        width: 100%;
+        margin: 0.8em auto;
+    }
+    .carousel-inner img {
+        min-height: 400px;
+    }
+    .about {
+        width: 100%;
+        padding: 10px;
+    }
+    .about h3 {
+        text-align: center;
+    }
+    .apresentacao {
+        display: block;
+        margin: 10px 5px;
+    }
+    #missao-visao {
+        max-width: 100vw;
+        margin: 10px auto;
+    }
+    #missao-visao h3 {
+        margin: 3px auto;
+    }
+    #descricao {
+        max-width: 100vw;
+        margin: 20px auto;
+    }
+    #descricao h3 {
+        margin: 3px auto;
+    }
+    .biografia {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .perfil {
+        display: block;
+        margin: 5px auto;
+    }
+    #exames-realizados {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+    }
+    #convenios_atendidos {
+        display: block;
+    }
+    .local {
+        display: block;
+    }
+    .contatos {
+        display: block;
+        font-size: 0.8em;
+    }
+    .logo_tel {
+        margin: 5px 50px;
+    }
+
+    .rodape {
+        display: none;
+    }
+}
+
