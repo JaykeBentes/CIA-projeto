@@ -470,11 +470,9 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
     .contatos {
         display: block;
         font-size: 0.8em;
+        margin: 110px 5px;
     }
-    .logo_tel {
-        margin: 5px 50px;
-    }
-
+    
     .rodape {
         display: none;
     }
