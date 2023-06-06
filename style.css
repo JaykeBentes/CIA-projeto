@@ -9,7 +9,7 @@
 body {
     min-height: 100%;
     background-color: #fafffb;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 header {
@@ -53,7 +53,7 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 65px;
+    height: 60px;
     background: #163d2d;
     position: fixed;
     bottom: 0;
@@ -406,6 +406,12 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
         background-color: #2d6b51;
         text-decoration: underline;
         border-radius: 8%;
+    }
+    .rodape {
+        flex-wrap: wrap;
+    }
+    #info-sociais {
+        display: none;
     }
 }
 
