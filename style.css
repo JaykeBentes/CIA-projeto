@@ -32,7 +32,7 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
     list-style: none;
 }
 .navegacao li {
-    margin: 0 15px;
+    margin: 0 8px;
 }
 .navegacao li a {
     text-decoration: none;
@@ -42,11 +42,11 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
     box-shadow: inset 0 0 0 0 #2d6b51;
     padding: 0 .25rem;
     margin: 0 -.25rem;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: color .6s ease-in, box-shadow .6s ease-in;
 }
 .navegacao li a:hover {
     color: #ffff;
-    box-shadow: inset 200px 0 0 0 #2d6b51;
+    box-shadow: inset 200px 0 200px 0 #2d6b51;
 }
 .rodape {
     padding: 5px;
@@ -356,7 +356,7 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
 
 
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1080px) {
     .navegacao {
         display: none;
     }
@@ -401,11 +401,12 @@ background: linear-gradient(180deg, rgba(33,79,60,1) 0%, rgba(88,193,149,1) 45%,
         font-weight: 600;
     }
     #offcanvasRight a:hover {
-        padding: 15px;
+        padding: 5px;
         color: #edffef;
         background-color: #2d6b51;
         text-decoration: underline;
         border-radius: 8%;
+        transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     }
     .rodape {
         flex-wrap: wrap;
